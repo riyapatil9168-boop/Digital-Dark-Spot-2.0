@@ -3,6 +3,8 @@ import os, re, json, ipaddress, socket, logging
 from typing import Any
 from urllib.parse import urlparse
 import httpx
+from dotenv import load_dotenv
+load_dotenv()
 from bs4 import BeautifulSoup
 from fastapi import FastAPI, HTTPException, UploadFile, File, Form
 from fastapi.responses import FileResponse
